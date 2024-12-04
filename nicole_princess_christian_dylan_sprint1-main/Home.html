@@ -1,0 +1,142 @@
+<!--
+Name: Nicole Sparkes
+Date: 2024-10-22
+Description: Home page. This page displays the home page for the Retro Diner. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sprint</title>
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="background">
+        <header class="header">
+            <img src = "Images/logo.jpg" alt="Sprint Logo" class="circular-logo">
+            <nav class="neon-nav">
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="history.html">The History</a></li>
+                    <li><a href="Menu.html">Menu</a></li>
+                    <li><a href="Ordering.html">Order</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class = "neon-border-container">
+                <div class="neon-border" ></div>
+            </div>
+            <form id="contest-form" class="email-form">
+                <input type="email" id="contest-email" placeholder="Enter your email" required>
+                <button type="submit">Enter to win a $50 gift card!</button>
+            </form>
+            
+        </header>
+        
+        <main>
+            <!-- History Section -->
+            <div class="history-section">
+                <h2 class="history-title">Welcome to Retro Diner: A Timeless Icon</h2>
+
+                <!-- Slideshow -->
+                <div class="slideshow-container">
+                    <div class="prev" onclick="moveSlides(-1)">❮</div>
+                    <div class="next" onclick="moveSlides(1)">❯</div>
+                    <!-- Slides go here -->
+                    <div class="slide active"><!-- Slide 1 content --></div>
+                    <div class="slide"><!-- Slide 2 content --></div>
+                    <div class="slide"><!-- Slide 3 content --></div>
+                </div>
+
+                <!-- History Content -->
+                <div class="history-content">
+                    <p class="history-description">
+                        Established in 1952 by Douglas "Duke" Rayson, Retro Diner has been a beloved destination for generations, blending classic American charm with larger-than-life stories. From its vintage chrome exterior to the neon-lit booths inside, Retro Diner has always been more than just a place to eat. It's where car lovers, road-trippers, and curious locals gather to share a meal and swap stories. Each generation of the Rayson family has brought its own unique touch, from Duke's car memorabilia to his son Jack’s “Time Traveler Tuesdays” and cosmic pancakes. Today, Duke's granddaughter Lily keeps the legend alive, adding a modern twist while staying true to the diner’s rich history and mysterious charm. Stop in for a bite and become part of the Retro Diner story!
+                        <a href="history.html" class="link-about">[Read More]</a>
+                    </p>
+                </div>
+                <img src="Images/diner_horizontal_collage.jpg" alt="Diner Collage" class="history-photo">
+            </div>
+
+                        <!-- Location & Hours Section -->
+            <section class="location-hours">
+                <h2>Location & Hours</h2>
+                <div class="location-details">
+                    <p><strong>Location:</strong> 123 Retro Road, Diner City, USA</p>
+                    <p><strong>Hours of Operation:</strong></p>
+                    <ul>
+                        <li>Monday - Friday: 8 AM - 10 PM</li>
+                        <li>Saturday: 9 AM - 11 PM</li>
+                        <li>Sunday: 10 AM - 9 PM</li>
+                    </ul>
+                </div>
+            </section>
+
+                        <!-- Reviews Section -->
+                        <section class="reviews-section">
+                            <h2>Customer Reviews</h2>
+                            <div class="review">
+                                <p class="review-text">"The Retro Diner is my go-to spot for breakfast! The pancakes are to die for!"</p>
+                                <p class="review-author">- Sarah J.</p>
+                            </div>
+                            <div class="review">
+                                <p class="review-text">"A charming place with a wonderful atmosphere. The service is excellent!"</p>
+                                <p class="review-author">- Mike L.</p>
+                            </div>
+                            <div class="review">
+                                <p class="review-text">"I love their cinnamon buns! Best I've ever had!"</p>
+                                <p class="review-author">- Emily R.</p>
+                            </div>
+                            <div class="review">
+                                <p class="review-text">"Retro Diner has the best burgers in town. Highly recommend!"</p>
+                                <p class="review-author">- John D.</p>
+                            </div>
+                        </section>
+
+            <!-- Write Review Section -->
+            <section class="write-review-section">
+                <h2>Write a Review</h2>
+                <form id="review-form">
+                    <div class="form-group">
+                        <label for="review-name">Enter Your Name:</label>
+                        <input type="text" id="review-name" placeholder="Enter Your Name:" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="review-text">Enter Your Review:</label>
+                        <textarea id="review-text" placeholder="Enter Your Review:" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="review-rating">Rating:</label>
+                        <select id="review-rating">
+                            <option value="5">5 Stars</option>
+                            <option value="4">4 Stars</option>
+                            <option value="3">3 Stars</option>
+                            <option value="2">2 Stars</option>
+                            <option value="1">1 Star</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="submit-button">Submit Review</button>
+                </form>
+            </section>
+            <div class = "neon-border-container">
+                <div class="neon-border" ></div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="social-media-icons">
+                <a href="https://facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+        </footer>
+        
+        
+       <div class="content-wrapper"></div>
+    </div>
+   
+    <script src="Home.js"></script>
+</body>
+</html>
